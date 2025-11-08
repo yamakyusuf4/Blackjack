@@ -48,5 +48,10 @@ public class CardVisual : MonoBehaviour
             yield return null;
         }
     }
+
+    public Card GetCardData()
+    {
+        return cardData;
+    }
 }
 

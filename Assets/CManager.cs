@@ -20,7 +20,6 @@ public class DeckManager : MonoBehaviour
     {
         runtimeDeck = new List<Card>(deck);
         ShuffleDeck();
-        StartCoroutine(DealStartingCards());
     }
 
     public void ShuffleDeck()
@@ -122,5 +121,26 @@ public class DeckManager : MonoBehaviour
             if (visual != null)
                 visual.Flip();
         }
+    }
+
+    public GameObject SpawnCard(Card drawn, Transform hand, bool faceDown = false)
+    {
+        GameObject cardGO = Instantiate(cardPrefab, deckPosition.position, Quaternion.identity, deckPosition.parent);
+        Image cardImage = cardGO.GetComponent<Image>();
+
+        CardVisual visual = cardGO.AddComponent<CardVisual>();
+        visual.Setup(drawn, cardImage, cardBackSprite);
+
+        if (!faceDown)
+        {
+            visual.Flip();
+        }
+
+        cardGO.transform.SetParent(hand, false);
+
+        RectTransform rect = cardGO.GetComponent<RectTransform>();
+        rect.anchoredPosition = new Vector2(hand.childCount * 140f, 0f);
+
+        return cardGO;
     }
 }
