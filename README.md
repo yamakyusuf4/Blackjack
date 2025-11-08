@@ -3,7 +3,7 @@
 ![Gameplay Screenshot](Images/blackjack_screenshot.png)
 
 A simple **Blackjack** card game made with **Unity** and **C#**, built as part of my journey to learn game development.  
-It’s a lightweight project that focuses on game logic, UI handling, and core Unity scripting.
+It’s a lightweight project that focuses on game logic, UI handling, and core Unity scripting. 🚨<ins>**Important:** This is a pre-release version of my Blackjack game, created to practice and improve my C# and Unity skills. It’s not the full game yet, I’m still developing it and plan to add more features soon!</ins>
 
 ---
 
@@ -34,6 +34,18 @@ This game was made for **learning and practice** — to understand:
 - Basic card game logic
 - Using UI elements and event systems
 - Writing clean, reusable C# scripts
+
+---
+
+## 🚧 Planned Features
+
+- Chip system 💎
+
+- Level progression 🪜
+
+- Split ✂️ and Surrender 🏳️ options
+
+This early build is mainly for learning and testing, the actual full game will come later
 
 ---
 
