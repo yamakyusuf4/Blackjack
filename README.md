@@ -39,7 +39,7 @@ This game was made for **learning and practice** — to understand:
 
 ## 🕹️ How to Play
 
-1. Download the latest build from the [Releases]([../../releases](https://github.com/yamakyusuf4/Flabby-Birb/releases/tag/v0.4)) page.
+1. Download the latest build from the [Releases](https://github.com/yamakyusuf4/Flabby-Birb/releases/tag/v0.4) page.
 2. Unzip the file.
 3. Run `Blackjack.exe` (or the version for your OS).
 4. Enjoy a quick round of digital Blackjack!
